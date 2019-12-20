@@ -1,0 +1,39 @@
+.banner {
+    position: relative;
+    min-height: 506px;
+    background-image: url('../assets/img/banner.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #c6c8cb;
+    background-color: rgba(67, 74, 84, .3);
+}
+
+.banner .banner__content {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 30%;
+    text-align: center;
+}
+
+.partner-item {
+    background-color: rgba(0, 161, 224, .2);
+    padding: 20px 0;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    display: inline-block;
+    margin: 0 10px;
+}
