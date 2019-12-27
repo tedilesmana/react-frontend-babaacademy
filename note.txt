@@ -1,0 +1,7 @@
+
+  // Set the new style cookie
+  res.cookie('3pcookie', 'value', { sameSite: 'none', secure: true });
+  // And set the same value in the legacy cookie
+  res.cookie('3pcookie-legacy', 'value', { secure: true });
+
+  document.cookie = "supersecretcookie=2;SameSite=Strict"

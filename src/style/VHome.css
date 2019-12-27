@@ -1,3 +1,220 @@
+#navbar {
+    height: 68px;
+    background-color: #00a1e0 !important;
+}
+
+* {
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+#nav-left .fa {
+    transform: scale(1, 0.85);
+}
+
+#kategori {
+    line-height: 36px;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #fff;
+}
+
+#nav {
+    margin-right: 0 !important;
+}
+
+#nav-left {
+    margin-left: -3px !important;
+}
+
+#kategori:hover {
+    color: black !important;
+}
+
+#nav-left .dropdown-menu {
+    position: relative;
+    top: 0px !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+}
+
+.banner .banner__content h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 58px;
+    margin-top: 0;
+    color: #222;
+}
+
+.video-section .video__content h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    color: #222;
+    margin-top: 0;
+}
+
+.text_secondary {
+    color: #6c757d !important;
+    font-size: 1.25rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#nav-left .dropdown-menu::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #fff transparent;
+    position: absolute;
+    top: -10px;
+    left: 11px;
+}
+
+#nav-left .dropdown-menu .dropdown-item {
+    padding: 7px 13px !important;
+    font-family: Open-Sans, sans-serif;
+    font-size: 16px;
+    box-shadow: 0 -2px 3px rgba(0, 0, 0, .05);
+    display: block;
+    width: 263px;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+#nav-left .dropdown-menu .dropdown-item .fa {
+    color: #9aa0ab;
+    float: right;
+    margin-top: 4px;
+}
+
+#nav-left .dropdown-menu .dropdown-item:hover {
+    background-color: rgba(0, 0, 0, .05);
+}
+
+#tech:hover {
+    color: black;
+}
+
+#submenu {
+    position: relative;
+}
+
+#courseImg {
+    width: 100%;
+    height: 190px;
+}
+
+#submenu:hover .dropdown-submenu {
+    display: block;
+}
+
+.dropdown-submenu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: none;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    border: none;
+    background: #ededed;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .35);
+    width: 227px;
+}
+
+.dropdown-submenu li {
+    padding: 0px 5px;
+    margin: 0 !important;
+    display: block;
+    width: 100%;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+.dropdown-subitem:hover {
+    color: #16181b;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, .05);
+}
+
+.dropdown-submenu li a {
+    box-shadow: none;
+    color: #333;
+    font-size: 14px !important;
+    text-decoration: none;
+    display: block;
+}
+
+#search {
+    position: relative;
+    width: 450px;
+}
+
+#search input {
+    height: 45px !important;
+    border-radius: 20px;
+}
+
+#cart .b-count {
+    position: absolute;
+    top: 2px;
+    right: 0px;
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cart .count {
+    font-size: 9px;
+}
+
+#cart {
+    top: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    right: 175px;
+    z-index: 1;
+}
+
+#cart:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+#search .fas {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 .banner {
     position: relative;
     min-height: 506px;
@@ -6,6 +223,25 @@
     background-size: cover;
     background-color: #c6c8cb;
     background-color: rgba(67, 74, 84, .3);
+}
+
+#right-nav {
+    font-size: 14px !important;
+    font-family: "Open Sans", sans-serif;
+}
+
+#right-nav .waves-light {
+    padding: 0 !important;
+}
+
+#signup {
+    border: 1px solid white !important;
+    border-radius: 20px;
+    width: 70px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .banner .banner__content {
@@ -36,4 +272,154 @@ li {
     text-align: -webkit-match-parent;
     display: inline-block;
     margin: 0 10px;
+}
+
+.video-section {
+    background-color: #f5f5f5;
+    padding: 40px 0;
+}
+
+iframe[Attributes Style] {
+    width: 554px;
+    height: 340px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+}
+
+.slider-section {
+    padding: 40px 0 0;
+}
+
+.slider-section .slider__content .slider__title {
+    padding-bottom: 35px;
+}
+
+.slider-section .slider__content .slider__title h4 {
+    margin: 0;
+    display: inline-block;
+    font-size: 24px;
+    color: #434a54;
+    font-weight: 300;
+}
+
+.slider-section .slider__content .slider__title h4 strong {
+    color: #00a1e0;
+    font-weight: 600;
+}
+
+.slider-section .slider__item .item .slider__description p.title {
+    margin-bottom: 6px;
+}
+
+.slider__description p.title {
+    font-size: 13px;
+    color: #215ca0;
+    line-height: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.slider-section .slider__item .item .slider__image img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    object-fit: cover;
+    height: 190px;
+}
+
+.slider__description p.time,
+.slider__description.course__desc .info {
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    color: #9aa0ab;
+    text-decoration: none;
+    margin-bottom: 0;
+}
+
+.small,
+small {
+    font-size: 80%;
+    font-weight: 400;
+}
+
+.pull-left {
+    position: absolute;
+    bottom: 20px;
+    color: #007bff;
+}
+
+.all-course .course__list>ul li .price,
+.slider__description .price {
+    margin: 0;
+    float: right;
+    font-size: 18px;
+    font-weight: 600;
+    color: #00458e;
+    margin-top: 25px;
+}
+
+.all-course .course__list>ul li .course__desc,
+.slider-section .slider__item .item .slider__description {
+    padding: 20px;
+}
+
+#list_item {
+    width: 266.25px;
+    margin-right: 25px;
+}
+
+footer {
+    background-color: #434a54;
+    color: #b5babf;
+    padding: 80px 0 39px;
+}
+
+footer .widget .widget__description>ul {
+    padding-left: 0;
+    list-style: none;
+    margin-left: 0 !important;
+    position: relative;
+    left: 0;
+}
+
+footer .widget .widget__title h3 {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding-inline-start: 0px !important;
+}
+
+footer .widget .widget__description ul>li a {
+    color: #b5babf;
+    font-size: 16px;
+}
+
+footer p {
+    color: #b5babf;
+}
+
+footer .widget .widget__description ul li {
+    margin-bottom: 20px;
+    margin-left: 0 !important;
+    display: block;
+    list-style: none;
+}
+
+footer .widget .widget__description ul.media li a {
+    border-radius: 25px;
+    border: 1px solid #b5babf;
+    color: #9aa0ab;
+    font-size: 20px;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+footer .copyright__text {
+    font-size: 14px;
 }
