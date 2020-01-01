@@ -43,5 +43,8 @@
   },
   "main": "index.js",
   "author": "tedilesmana <tedilesmana0123@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "devDependencies": {},
+  "keywords": []
 }
