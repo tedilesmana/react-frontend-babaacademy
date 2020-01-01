@@ -9,12 +9,12 @@ class FormEditProduk extends Component {
         super();
         this.state = {
             course: {
-                title: '',
-                desc: '',
-                price: '',
-                diskon: '',
-                image: '',
-                url_image: ''
+                title: 'aaa ',
+                desc: ' ',
+                price: ' ',
+                diskon: ' ',
+                image: ' ',
+                url_image: ' '
             },
             redirect: false,
             file: null
@@ -23,9 +23,10 @@ class FormEditProduk extends Component {
     }
 
     componentDidMount() {
+        console.log(this.props.idValue);
         // handle success
         let currentComponent = this;
-        axios.get(`http://localhost:8000/course/${this.props.idValue}`)
+        axios.get(`http://ec2-18-217-70-47.us-east-2.compute.amazonaws.com/api/course/${this.props.idValue}`)
             .then(function(response) {
                 // handle success
                 currentComponent.setState({
@@ -63,10 +64,10 @@ class FormEditProduk extends Component {
     putDataToApi = (id) => {
         let file = this.state.file;
         let course = this.state.course;
-        axios.put(`http://localhost:8000/course/${id}`, course).then((res) => {
+        axios.put(`http://ec2-18-217-70-47.us-east-2.compute.amazonaws.com/api/course/${id}`, course).then((res) => {
             this.setState({ redirect: false })
         })
-        axios.put(`http://localhost:8000/course/${id}`, file).then((res) => {
+        axios.put(`http://ec2-18-217-70-47.us-east-2.compute.amazonaws.com/api/course/${id}`, file).then((res) => {
             this.setState({ redirect: true })
         })
     }
@@ -147,6 +148,9 @@ class FormEditProduk extends Component {
               value={this.state.course.title}
               onChange={this.handleChang.bind(this)}
             />
+            {console.log('his.state.course')}
+            {console.log(this.state.course.title)}
+            {console.log('this.state.course')}
             <br />
             <label htmlFor="defaultFormRegisterEmailEx" className="grey-text">
               Descripsi Course

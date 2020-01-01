@@ -18,7 +18,7 @@ class VHome extends Component {
 
     getPostApi = () => {
         let currentComponent = this;
-        axios.get('http://localhost:8000/course')
+        axios.get('http://ec2-18-217-70-47.us-east-2.compute.amazonaws.com/api/course')
             .then(function(response) {
                 // handle success
                 console.log(response.data.response);
@@ -41,7 +41,7 @@ class VHome extends Component {
 
     handleHapus = (e, data, action) => {
         e.preventDefault();
-        axios.delete(`http://localhost:8000/course/${data}?action=${action}`).then((res) => {
+        axios.delete(`http://ec2-18-217-70-47.us-east-2.compute.amazonaws.com/api/course/${data}?action=${action}`).then((res) => {
             this.getPostApi()
         })
     }

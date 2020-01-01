@@ -18,8 +18,9 @@ class VHome extends Component {
 
     componentDidMount() {
         let currentComponent = this;
+        console.log(this.state.post);
 
-        axios.get('http://localhost:8000/course')
+        axios.get('http://ec2-18-217-70-47.us-east-2.compute.amazonaws.com/api/course')
             .then(function(response) {
                 // handle success
                 console.log(response.data.response);

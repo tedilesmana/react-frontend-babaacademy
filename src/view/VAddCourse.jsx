@@ -14,7 +14,7 @@ class VAddCourse extends Component {
                 price: '',
                 diskon: '',
                 image: '',
-                url_image: 'http://localhost:8000/image/'
+                url_image: 'http://ec2-18-217-70-47.us-east-2.compute.amazonaws.com/api/image/'
             },
             redirect: false,
             file: null
@@ -44,9 +44,9 @@ class VAddCourse extends Component {
         console.log('testq');
         let file = this.state.file;
         let course = this.state.course;
-        axios.post('http://localhost:8000/course', file)
+        axios.post('http://ec2-18-217-70-47.us-east-2.compute.amazonaws.com/api/course', file)
             .then((res) => {})
-        axios.post('http://localhost:8000/course', course)
+        axios.post('http://ec2-18-217-70-47.us-east-2.compute.amazonaws.com/api/course', course)
             .then((res) => {
                 console.log('res false')
                 this.setState({ redirect: true })
