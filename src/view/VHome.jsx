@@ -65,7 +65,7 @@ class VHome extends Component {
             <div className="row">
                 <div className="col-md-6 col-sm-6 col-xs-12 pr-5">
                     <div className="video__iframe" id="portal-embed">
-                        <iframe width="554" height="340" src="https://www.youtube.com/embed/k8XN5iCJFhI" frameBorder="0" allowFullScreen="" title="myFrame"></iframe>
+                        <iframe width="554" height="340" src="https://www.youtube.com/embed/k8XN5iCJFhI" frameBorder="0" allowFullScreen="" title="myFrame" id="iframe"></iframe>
                     </div>
                 </div>
                 <div className="col-md-6 col-sm-6 col-xs-12 pl-5">
